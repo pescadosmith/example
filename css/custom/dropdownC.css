@@ -1,0 +1,24 @@
+/* 
+    Document   : dropdownC
+    Created on : Sep 30, 2013, 10:42:09 AM
+    Author     : andrew.smith
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import '../ui.dropdownchecklist.standalone.css';
+
+label.ui-dropdownchecklist-text{
+    display: inline;
+}
+
+/*.ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+    background: none;
+    font-weight: normal;
+    color: rgb(85, 85, 85);
+}*/
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: 1;
+}

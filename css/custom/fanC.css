@@ -1,0 +1,29 @@
+/* 
+    Document   : fanC
+    Created on : Aug 30, 2013, 1:16:10 PM
+    Author     : andrew.smith
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@import '../jquery.fancybox.css';
+
+
+a .thumbnails {
+    line-height: 20px;
+    border: 5px solid white;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    background-color: white !important;
+}
+
+.fancybox-title-inside-wrap{
+    text-align: center;
+}
+
+.fancybox-skin{
+    background: white;
+}

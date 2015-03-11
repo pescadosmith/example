@@ -1,0 +1,31 @@
+/* 
+    Document   : fanC
+    Created on : Aug 30, 2013, 1:16:10 PM
+    Author     : andrew.smith
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@import '../jquery.ui.accordion.css';
+
+.ui-accordion .ui-accordion-content{
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.go{
+    background-image: url(../../img/magnifying.png);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    margin: 0px 0px 0px 5px;
+    border-radius: 4px;
+}
+
+.clearDropdown{
+    background-image: url(../../img/magnifying.png);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    margin: 0px 0px 0px 5px;
+    border-radius: 4px;
+}
+

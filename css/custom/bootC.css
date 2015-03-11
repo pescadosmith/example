@@ -1,0 +1,46 @@
+/* 
+    Document   : bootC
+    Created on : Aug 30, 2013, 2:39:36 PM
+    Author     : andrew.smith
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import '../bootstrap.min.css';
+
+.row-fluid .form{
+    min-width: 115px;
+    max-width: 255px;
+}
+
+.row-fluid .date{
+    min-width: 100px;
+}
+
+h1{
+    color: white;
+}
+
+
+#filterset{
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+
+.row-fluid .thumbnails {
+    margin-left: 10px;
+}
+
+.imgThumbnail{
+    min-height: 50px;
+    min-width: 75px;
+}
+
+.imageRowSpan{
+    margin-bottom: 10px;
+}
+
+#search_form_div{
+    margin-bottom: 10px;
+}

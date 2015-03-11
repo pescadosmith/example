@@ -1,0 +1,409 @@
+/* ==== RESET CSS ==== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, cite, code, dfn, em, font, img, q, strong, tt, b, u, i, center, ol, ul, li, fieldset, form, label,legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;	background: transparent;}
+
+
+/* ==== FONTS ==== */
+
+@font-face{font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;}
+
+/* ====  COMMON STYLES - styles shared by both desktop/tablet/mobile ====  */
+
+@media screen {
+
+    /* === GLOBAL === */
+    html{-webkit-text-size-adjust: none;}
+    body{font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; color:rgb(68,68,68); font-size:100%; background: none repeat scroll 0% 0% rgb(248, 111, 5);}
+    a:link {color:rgb(248,248,255);}
+    a:visited {color:rgb(140, 126, 91);}
+    a:active {color:rgb(102, 91, 72);outline: none;}
+    a:hover {color:rgb(168, 152, 116);outline: none;}
+    .group:after {content: ".";display: block;height: 0;clear:both;visibility:hidden;} /* Self-clearing floats */
+    label, input[type=button], input[type=submit], button {cursor: pointer;}
+
+    /* === TOP BAR=== */
+    #top{background:rgb(105,84,61) url('images/grad.png') repeat-x bottom left;height:3.625em;}
+    #gslogo{float:left;padding:0.5em  0.9375em;}
+    #gslogo img {height:3em;}
+    #gslogo_right{float:right;padding:0.5em  0.9375em;}
+    #gslogo_right img {height:3em;}
+    #query {position: relative; top: -0.25em;right:0;width:8.5em;height:1.75em;background: white url('images/search.png') right no-repeat;padding-right: 1.5em;}
+
+    /* === UNIVERSAL NAV === */
+    #masternav {font-weight: 500;margin: 0 auto;max-width: 67em;padding: 0 0 1.25em 0;text-align:center;}
+    #topnav ul {width:100%;}
+    #topnav li {list-style: none;margin: 0 0 0 0; padding:0;position: relative;font-size:0.9em;display:inline;}
+    #topnav a {display:inline-block; margin-right:-0.5em;padding:0.375em 0.6em; color:rgb(255,255,255);border: 0.0625em solid rgb(48,109,29); background: rgb(75,124,42) url('images/btn_glass.png') repeat-x 0 50%;font-size: 1.5em;}
+    #topnav a:hover {background-color: rgb(52,76,0); border-bottom: 0.0625em solid rgb(52,76,0);} 
+    #topnav a:first-child{
+        border-radius: 5px 5px 0px 0px;
+    }
+    #topnav :last-child{
+        border-radius: 0px 0px 5px 5px;
+    }
+    .megamenu {position: absolute;top: 1.75em; left: 0;z-index: 1000;font-weight: 400;	background: rgb(255,249,229);padding: 1.5em 0.5em 1.5em 2.5em;box-shadow: 0 0 0.5em rgb(51,51,51);-webkit-box-shadow: 0 0 0.5em rgb(51,51,51);-moz-box-shadow: 0 0 0.5em rgb(51,51,51);border-bottom-right-radius:0.9375em;-moz-border-radius-bottomright: 0.9375em;	-webkit-border-bottom-right-radius: 0.9375em;border-bottom-left-radius:0.9375em;-moz-border-radius-bottomleft: 0.9375em;-webkit-border-bottom-left-radius: 0.9375em;display: none; /*--Hidden for those with js turned off--*/}
+    .megamenu ul {margin: 0 0 0 1em;padding: 0 0 0 1em;float: left;border-left: 1px dotted rgb(105,84,61);white-space: nowrap;height:100%;vertical-align: top;}
+    .megamenu > ul:first-child {margin: 0;padding: 0;border-left: none;}
+    #masternav .megatitle {
+        display:block;padding: 0; font-size: 1em;
+        font-weight: bold;color: rgb(51,51,0);text-align:left;}
+    #masternav .megamenu li a {	background: rgb(255,249,229);padding: 0;	display: block;color: rgb(51,102,51);border: none;text-align:left;}
+    #masternav .megamenu a:hover {color: rgb(145,109,58); text-decoration: underline;}
+
+    /* === HEADER === */
+    #header{float:left;width:100%;background-color:rgb(105,84,61);border-top-left-radius:0.9375em; -webkit-border-top-left-radius:0.9375em; -moz-border-radius-topleft:0.9375em; border-top-right-radius:0.9375em; -webkit-border-top-right-radius:0.9375em; -moz-border-radius-topright:0.9375em;}
+    #header h1{background:rgb(105,84,61) url('images/grad.png') repeat-x bottom left;padding:0.4em;padding-left:1em; font-size:1.5em; border-top-left-radius:0.625em; -webkit-border-top-left-radius:0.625em; -moz-border-radius-topleft:0.625em; border-top-right-radius:0.625em; -webkit-border-top-right-radius:0.625em; -moz-border-radius-topright:0.625em;color: white;}
+    #header a:link {color:rgb(246,246,204);text-decoration: none;}
+    #header a:visited {color:rgb(246,246,204);text-decoration: none;}
+    #header a:active {color:rgb(246,246,204);text-decoration: none;}
+    #header a:hover {color:rgb(223,197,155);text-decoration: none;}
+    #headercycle { height: 12.5em; width: 100%; overflow: hidden;float:left;}
+    .overlay-caption-left {padding: 0.1875em 0.625em 0.1875em 0.625em;margin-bottom: -0.3125em;height: 1.875em;text-align: left;position: absolute;bottom: 0.3125em;left: 0;display: inline;cursor: pointer;background-color: #E3E3E3;color: #404040;font-size:90%;opacity: .7;border-top-right-radius: 0.3125em; border-bottom-right-radius: 0.3125em;-moz-border-radius-topright: 0.3125em; -moz-border-radius-bottomright: 0.3125em;-webkit-border-radius-topright: 0.3125em; -webkit-border-radius-bottomright: 0.3125em;}
+
+    /* === CONTENT CONTAINERS === */
+    #fronds{max-width:77.5em;margin: 0 auto;background-color:trasparent;background-image: url('images/fronds.png');background-position: -0.9em 2em;background-repeat:no-repeat;}
+    #wrap{max-width:58em;margin: 0 auto;padding-top:0.0625em;background-color: rgba(254,254,254,.25); border-radius:0.9375em; -webkit-border-radius:0.9375em; -moz-border-radius:0.9375em;z-index:2;}
+    #main{max-width:56em;background-color:rgb(246,244,206);margin:1.5625em;border-radius:0.9375em; -webkit-border-radius:0.9375em; -moz-border-radius:0.9375em;}
+    #main_content{min-height:600px;}
+    /* === CONTENT STYLES === */
+    #content{float:right;width:95%;margin:1em 1em 1em 2.5em;}
+    #content ul, ol {padding:0 0.5em;}
+    #content li {padding:0.375em 0;margin-left:0.5em;}
+    ul[role="navigation"] > li {padding:0;margin:0;} /* excludes navigation bars from previous style */
+
+
+    #feedback1 { font-size: 1.4em; }
+    #selectable1 .ui-selecting { background: #FECA40; }
+    #selectable1 .ui-selected { background: #F39814; color: white; }
+    #selectable1 { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+    #selectable { list-style-type: none;}
+    #selectable1 #selectable li { margin: 3px; padding: 0.4em;}
+
+    h2, h3, h4, h5 {margin:1em 0 1em -0.5em; color: rgb(51,51,0);color: rgba(51,51,0,.9);}
+    h2{font-size:1.4em;}
+    h3{font-size:1.2em;}
+    h4{font-size:1.0em;}
+    h5{font-size:0.8em;}
+    .indent{margin-left:1.25em;}
+    .smtxt{font-size:0.85em;}
+    .caption{font-size:0.9em;color:rgb(54, 111, 30);}
+    .class-title{font-size: 1.1em;font-weight: bold;}
+    .class-datetime{font-weight: bold;}
+    .tablepadding td {padding: 0.4em;}
+
+
+    /* ===  SHOW/HIDE TOGGLE === */
+    .triggercontainer{margin-left:1em;margin-bottom:12em;}
+    p.trigger {padding: 0 0 0 2.1875em;margin: 0 0 0.3125em 0;	background: url('images/show-hide-buttons-grn.png') no-repeat;	height: 2.875em;line-height: 2.875em;width: 100%;font-size: 1.1em;float: left;}
+    p.trigger a {color: rgb(51,51,0);text-decoration: none;	display: block;}
+    p.trigger a:hover { color: rgb(168, 152, 116); }
+    p.toggle_active {background-position: left bottom;}
+    .toggle_container {margin: 0 0 0.3125em;padding: 0;	border-top: 1px solid rgb(214,214,214);	background:rgb(255,254,233);overflow: hidden;font-size: 1em;width: 95%;clear: both;}
+    .toggle_container .block {padding: 0.3125em 0.625em 0.625em 0.625em;}
+
+    /* === FOOTER styles === */
+    #footer{float:left;width:100%;background:rgb(105,84,61) url('images/grad_footer.png') repeat-x bottom left;margin-top:1em;text-align: center;padding-bottom:0.5em;padding-top:1em;color:rgb(250,250,250);border:0; border-bottom-left-radius:0.9375em; -webkit-border-bottom-left-radius:0.9375em; -moz-border-radius-bottomleft:0.9375em; border-bottom-right-radius:0.9375em; -webkit-border-bottom-right-radius:0.9375em; -moz-border-radius-bottomright:0.9375em;}
+    #footer .address {width:100%;font-size:0.9em;}
+
+    #footer a:link {color:rgb(179,161,116);}
+    #footer a:visited {color:rgb(217,195,141);}
+    #footer a:active {color:rgb(179,161,116);}
+    #footer a:hover {color:rgb(197, 178, 136);}
+
+    /* === ACCESSIBILITY styles === */
+    /* Show option to skip master menu when navigating with a keyboard */
+    #skip a {position:absolute;left:-1000em;top:auto;width:0.0625em;height:0.0625em;overflow:hidden;}
+    #skip a:link {color:rgb(255,255,255);}
+    #skip a:visited {color:rgb(255,255,255);}
+    #skip a:active {color:rgb(255,255,255);}
+    #skip a:hover {color:rgb(255,255,255);}
+    #skip a:focus{position:static;width:auto;height:auto;} 
+
+    /* === jQuery Lightbox styles == */
+    /* @version 0.5 @copyright (c) 2008 Leandro Vieira Pinho @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US */
+    #jquery-overlay {position: absolute;	top: 0;left:0;	z-index: 90;width:100%;height:31.25em;}
+    #jquery-lightbox {	position: absolute;top: 0;left: 0;width: 100%;z-index: 100;text-align: center;line-height: 0;}
+    #jquery-lightbox a img {border: none; }
+    #lightbox-container-image-box {position: relative;background-color:rgb(255,255,255);width: 15.625em;height: 15.625em;	margin: 0 auto;}
+    #lightbox-container-image {padding: 0.625em;}
+    #lightbox-loading {position: absolute;top: 40%;left: 0%;height: 25%;width: 100%;text-align: center;line-height: 0;}
+    #lightbox-nav {position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 10;}
+    #lightbox-container-image-box > #lightbox-nav {left: 0; }
+    #lightbox-nav a {outline: none;}
+    #lightbox-nav-btnPrev, #lightbox-nav-btnNext {width: 49%;height: 100%;zoom: 1;display: block;}
+    #lightbox-nav-btnPrev {left: 0;float: left;}
+    #lightbox-nav-btnNext {right: 0;float: right;}
+    #lightbox-container-image-data-box {font: 0.75em Verdana, Helvetica, sans-serif;background-color:rgb(255,255,255);margin: 0 auto;line-height: 1.4em;	overflow: auto;	width: 100%;padding: 0 10px 0;}
+    #lightbox-container-image-data {	padding: 0 0.625em; color: rgb(102,102,102);}
+    #lightbox-container-image-data #lightbox-image-details {width: 70%;float: left;text-align: left;}	
+    #lightbox-image-details-caption {font-weight: bold; }
+    #lightbox-image-details-currentNumber {display: block;clear: left;padding-bottom: 1.0em;}			
+    #lightbox-secNav-btnClose {width: 5em;float: right;padding-bottom: 0.7em;}
+    /* For galleries that are not in the slider carousel but do use the lightbox javascript */
+    #lightbox-group-noslider{width:42em;}
+    .lbox {width:9.375em;height:12.5emx;float:left;margin:0.9375em 1.25em 0.3125em 0.9375em;font-size:90%;}
+
+    #sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0 0 2.5em; float: left; margin-right: 10px; }
+    #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+} /* End @media screen  MQ */
+
+
+/*  ==== MEDIA QUERY ~ TABLET PORTRAIT (2-col to 1 col on homepage, reduce branding bar) ====  */
+
+@media only screen and (max-width: 800px) {
+
+    /* == GLOBAL == */
+
+    /* == BRANDING BAR == */
+    #top{background:rgb(105,84,61) url('images/grad.png') repeat-x bottom left;height:2.625em;}
+    #gslogo{float:left;padding:0.5em  0.5em;}
+    #gslogo img {height:1.5em;}
+    #searchbox{float:right;padding:1em 0 0em .3125em;z-index:1;}
+    #query {position: relative; top: -0.5em;right:0;width:7.5em;height:1.25em;} 
+    #gslogo_right{float:right;padding:0.5em  0.5em;}
+    #gslogo_right img {height:1.5em;}
+
+    /* === UNIVERSAL NAV === */
+    #masternav{margin:-1em 0;}
+
+    /* == CONTENT CONTAINERS == */
+    #fronds{background:none;width:100%;}
+    #wrap{width:100%;}
+    #main{width:100%;margin:0;background-color:rgb(246,244,206);}
+
+    /* == CONTENT STYLES == */
+    h2, h3, h4, h5 {margin:0 0 1em 0;}
+
+}  /* End 800px MQ
+
+
+/*  ==== MEDIA QUERY ~ MOBILE LANDSCAPE styles (search box drops below branding bar) ====  */
+
+@media only screen and (max-width: 520px) {
+
+    /* === HEADER === */
+    #header{float:left;width:100%;background-color:rgb(105,84,61);}
+    h1{background:rgb(105,84,61) url('images/grad.png') repeat-x bottom left;padding:0.4em;padding-left:0.5em;font-size:1.25em;}
+    #headercycle {display:none;}
+
+    /* === BRANDING BAR === */
+    #top{background:rgb(105,84,61) url('images/grad.png') repeat-x bottom left;height:2.625em;}
+    #gslogo{float:left;padding:0.5em  0.5em;}
+    #gslogo_right{float:right;padding:0.5em  0.5em;}
+    #searchbox{float:right;width:100%;padding:0.5em 0 0 0.5em;z-index:1;}
+    #query {position: relative; top: -0.5em;left:0.5em;width:90%;}
+
+    /* === UNIVERSAL NAV === */
+    #masternav{margin:0;width:100%;padding: 0 0 0.5em 0;}
+    #topnav li {font-size:0.78em;}
+    #topnav a {margin-right:-0.5em;padding:0.2em 0.5em;}
+
+    /* == CONTENT styles == */
+    #main{font-size:80%;}
+    h2, h3, h4, h5 {margin:0.5em 0 0.5em 0;font-size:90%;}
+    #content{float:right;width:97%;margin:0;}
+
+}  /* End 520px MQ
+
+
+/*  ==== MEDIA QUERY ~ MOBILE PORTRAIT styles (adjustments for smallest width)====  */
+
+@media only screen and (max-width: 480px) {
+
+    /* == BRANDING BAR == */
+    #top{height:2.2em;}
+    #gslogo img {height:1.2em;}
+    #gslogo_right img {height:1.2em;}
+    #query{width:85%;}
+
+    /* === UNIVERSAL NAV styles === */
+    #topnav li {font-size:0.6em;}
+
+    /* === CONTENT styles === */
+    #main{font-size:90%;}
+
+    /* === FOOTER styles === */
+    #footer .address {;font-size:0.75em;line-height:1.5em;}
+
+}  /* End 320px MQ
+
+
+
+/* ====  PRINT STYLES  ====  */
+
+@media print {
+
+    /* === GLOBAL === */
+    body{color:rgb(0,0,0); font-size:100%; line-height: 1.3em;}
+    a:link {color:rgb(248,248,255);}
+    a:visited {color:rgb(145,145,36);}
+    a:active {color:rgb(145,145,36);}
+    a:hover {color:rgb(184,184,46);}
+    .group:after {content: " ";display: block;height: 0;clear:both;visibility:hidden;}
+
+    /* === BRANDING BAR === */
+    #top{border:0; padding:0;}
+    #gslogo img{float:left;border:0;}
+    #gslogo a{text-decoration:none;}
+    #searchbox{display:none;}
+    #gslogo_right{display:none;}
+
+    /* === UNIVERSAL NAV === */
+    #masternav {display:none;}
+    #topnav {display:none;}
+    .megamenu {display:none;}
+
+    /* === HEADER === */
+    #header{float:left;width:100%;}
+    h1{padding:2em 0 1em 0;margin-top:-1em; font-size:1.5em;color:rgb(51,51,0);}
+    h1 a {text-decoration: none;}
+    #headercycle {display:none;}
+
+    /* === CONTENT CONTAINERS === */
+    #wrap{width:100%;}
+    #main{width:100%;}
+
+    /* === CONTENT STYLES === */
+    #content{width:100%;}
+    #content ul, ol {padding:0 0.5em;}
+    #content li {padding:0.375em 0;margin-left:0.5em}
+    h2, h3, h4, h5 {margin:1em 0; color:rgb(51,51,0);}
+    h2{font-size:1.2em;}
+    h3{font-size:1.1em;}
+    h4{font-size:1.0em;}
+    h5{font-size:0.9em;}
+    .indent{margin-left:1.25em;}
+    .smtxt{font-size:0.85em;}
+
+    /* === ACCESSIBILITY === */
+    #skip {display:none;}
+
+    /* === FOOTER  === */
+    #footer{width:100%;margin-top:1em;text-align: center;padding-bottom:0.5em;padding-top:1em;border-top:0.0625em solid #ccc;}
+    #footer .address {width:100%;font-size:0.75em;color:rgb(51,51,0);}
+
+}  /* End print styles */
+
+/* === GLOBAL styles === */
+
+body{
+    background: none repeat scroll 0% 0% rgb(248, 111, 5);
+}
+a:link {color:rgb(248,248,255);}
+a:visited {color:rgb(248,248,255);}
+a:active {color:rgb(220,220,220);}
+a:hover {color:rgb(255,255,255);text-decoration:none;}
+#playlist a:hover {color:rgb(255,255,255);text-decoration:none; font-size: 1.25em; font-weight:700; 
+                   text-shadow: .75px .75px rgb(248, 111, 5);}
+
+#playlist ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 10px 0px 20px -150px;;
+}
+#playlist li{
+    padding: 10px 5px 10px 90px;
+    margin: 0px 0px 0px 150px;
+    background-color: rgb(248, 111, 5);
+}
+#playlist li:first-of-type{
+    border-radius: 140px 140px 0px 0px;
+    margin: 0px 0px 0px 150px;
+}
+#playlist li:nth-child(even){
+    margin: 0px 0px 0px 150px;
+}
+
+#playlist li:last-child{
+    border-radius: 0px 0px 140px 140px;
+    margin: 0px 0px 0px 150px;
+}
+#playlist li:only-of-type{
+    border-radius: 140px 140px 140px 140px;
+    margin: 0px 0px 15px 150px;
+}
+#playlist ul li a:hover {
+    color:rgb(255,255,255);
+    text-decoration:none; 
+    font-size: 1.05em; font-weight:700; 
+    text-shadow: .75px .75px rgb(248, 111, 5);}
+
+/* === HEADER styles === */
+#header a:link {color:rgb(246,246,204);}
+#header a:visited {color:rgb(246,246,204);}
+#header a:active {color:rgb(246,246,204);}
+#header a:hover {color:rgb(223,197,155);}
+
+/* === UNIVERSAL NAV styles === */
+#topnav a {color:rgb(255,255,255);border: 0.0625em solid rgb(114, 105, 100); background: rgb(144, 74, 23) url('/css/images/gradients/btn_glass.png') repeat-x 0 50%;}
+#topnav a:hover {background-color: rgb(170,156,147); border-bottom: 0.0625em solid rgb(114, 105, 100);}
+#topnav li:first-of-type a{
+    border-radius: 10px 0px 0px 10px;
+}
+#topnav li:last-child a{
+    border-radius: 0px 10px 10px 0px;
+}
+/* === CONTENT CONTAINER layout styles === */
+#main{background-color:rgb(249,249,243);}
+
+/* === CONTENT styles === */
+h2, h3, h4, h5 {color: rgb(51,51,0);color: rgba(51,51,0,.9);}
+.lbox {width:13em;float:left;margin:0.625em 0.625em 0.625em 1.5625em;}
+.lboxcanoe {width:12em;height:22em;float:left;margin:0.5em 0.2em 1em 1.5625em;font-size:80%;}
+.lboxcanoeb {width:25em;height:20em;float:left;margin:0.5em 0.2em 1em 1.5625em;font-size:80%;}
+
+td{width:180}
+.caption{color:#6a88a4;font-size:90%;}
+table.stafftble td {padding: 0.25em;}
+table.stafftble tr:nth-child(odd) {background-color:rgb(241,245,255);}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #FFF;
+    /*font-size: 8pt;*/
+    padding: 4px;
+}
+table.tablesorter thead tr .header {
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(images/desc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}
+
+#sortable1, #sortable2 { 
+    list-style-type: none; 
+    margin: 0px 0px 0px 15px; 
+    float: left; 
+    display: inline-block;
+    width: 90%;
+    //    overflow: hidden;
+}
+#sortable1 li, #sortable2 li { 
+    margin: 0 5px 5px 5px; 
+    padding: 5px; 
+    font-size: 1em; 
+    width: 90%;
+    text-align: left;
+}
+#playlist {margin: 15px 10px; color: white;}
+#pageName{margin: 5px 10px 15px 5px; padding: 5px; font-size: 2em; font-weight:bold;}
+
+#img_playlist{height:75px;width:75px;border-radius:10px;float:left;margin:0px 15px 10px 0px;}
+
+.selectableDiv{float:left;width: 50%;background-color: grey;}
+
+.selectableHeader{font-size: 1.25em;margin: 10px;color: white;font-weight: bold;width: 50%; text-align: center;}
+
+.connectedSortable {overflow: hidden;}
+
